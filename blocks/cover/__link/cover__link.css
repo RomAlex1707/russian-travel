@@ -4,13 +4,16 @@
   width: 100%;
   color: #fff;
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-size: 100% 100%;
-  overflow: hidden;
   z-index: 0;
+  padding: 19.141% 0;
 }
 
-.cover__link:hover::after {
+.cover__link::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,5 +23,35 @@
   height: 100%;
   z-index: -1;
   background-color:#2A2C2F;
-  opacity: 0.8; 
+  opacity: 0.3;
+  transition: opacity 0.2s ease; 
+}
+
+.cover__link:hover::after {
+  opacity: 0.8;
+
+}
+
+@media screen and (max-width: 1279px) {
+  .cover__link {
+    padding: 19.044% 0;
+  }  
+}
+
+@media screen and (max-width: 1023px) {
+  .cover__link {
+    padding: 14.975% 0;
+  }  
+}
+
+@media screen and (max-width: 767px) {
+  .cover__link {
+    padding: 17.313% 0;
+  }  
+}
+
+@media screen and (max-width: 460px) {
+  .cover__link {
+    padding: 10.313% 0;
+  }  
 }
