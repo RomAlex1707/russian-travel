@@ -16,4 +16,5 @@ ___
 -Подключение шрифтов.  
 ___
 ## Ссылка на GitHub Pages  
+https://romalex1707.github.io/russian-travel/index.html
 
